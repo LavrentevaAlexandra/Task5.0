@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.example.com/flowers"
+         xsi:schemaLocation="http://www.example.com/flowers schema.xsd">
+    <poisonous-flower id="AAAAAA" name="Lily">
+        <soooooooooooooooooooooooooooil>podzolic</soooooooooooooooooooooooooooil>
+        <origin>Asia</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Green</leaf-colour>
+            <average-size>30</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>20</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>450</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <poisonous-part>bulb</poisonous-part>
+    </poisonous-flower>
+</flowers>

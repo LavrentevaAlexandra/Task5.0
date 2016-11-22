@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://www.example.com/flowers"
+         xsi:schemaLocation="http://www.example.com/flowers schema.xsd">
+    <poisonous-flower id="AAAAAA" name="Lily">
+        <soil>podzolic</soil>
+        <origin>Asia</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Green</leaf-colour>
+            <average-size>30</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>20</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>450</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <poisonous-part>bulb</poisonous-part>
+    </poisonous-flower>
+    <rare-flower id="BBBBBB" name="Cosmea">
+        <soil>dirt</soil>
+        <origin>Mexico</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Brown</leaf-colour>
+            <average-size>12</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>18</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>300</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <quantity>230</quantity>
+    </rare-flower>
+    <poisonous-flower id="CCCCCC" name="may-lily">
+        <soil>sod-podzolic</soil>
+        <origin>Caucasus</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>White</leaf-colour>
+            <average-size>10</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>15</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>250</watering-amount>
+        </growing-tips>
+        <multiplying>stalk</multiplying>
+        <poisonous-part>all parts</poisonous-part>
+    </poisonous-flower>
+    <rare-flower id="DDDDDD" name="may-lily">
+        <soil>sod-podzolic</soil>
+        <origin>China</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>White</leaf-colour>
+            <average-size>10</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>15</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>250</watering-amount>
+        </growing-tips>
+        <multiplying>stalk</multiplying>
+        <quantity>10060</quantity>
+    </rare-flower>
+    <poisonous-flower id="EEEEEE" name="Tulip">
+        <soil>podzolic</soil>
+        <origin>Asia</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Green</leaf-colour>
+            <average-size>25</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>22</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>340</watering-amount>
+        </growing-tips>
+        <multiplying>stalk</multiplying>
+        <poisonous-part>bulb</poisonous-part>
+    </poisonous-flower>
+    <rare-flower id="FFFFFF" name="Scilla">
+        <soil>dirt</soil>
+        <origin>Siberia</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Violet</leaf-colour>
+            <average-size>30</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>15</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>210</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <quantity>807</quantity>
+    </rare-flower>
+    <poisonous-flower id="GGGGGG" name="Milfoil">
+        <soil>podzolic</soil>
+        <origin>Russia</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>White</leaf-colour>
+            <average-size>47</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>18</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>400</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <poisonous-part>leaf</poisonous-part>
+    </poisonous-flower>
+    <rare-flower id="HHHHHH" name="Forget-me-not">
+        <soil>podzolic</soil>
+        <origin>England</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Blue</leaf-colour>
+            <average-size>7</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>15</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>300</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <quantity>690</quantity>
+    </rare-flower>
+    <poisonous-flower id="IIIIII" name="Begonia">
+        <soil>sod-podzolic</soil>
+        <origin>India</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Pink</leaf-colour>
+            <average-size>8</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>18</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>230</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <poisonous-part>all parts</poisonous-part>
+    </poisonous-flower>
+    <rare-flower id="JJJJJJ" name="Ornithogalum">
+        <soil>sod-podzolic</soil>
+        <origin>Africa</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>White</leaf-colour>
+            <average-size>20</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>25</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>400</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <quantity>39000</quantity>
+    </rare-flower>
+    <poisonous-flower id="KKKKKK" name="Cow parsnip">
+        <soil>dirt</soil>
+        <origin>exSSSR</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>White</leaf-colour>
+            <average-size>400</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>18</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>200</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <poisonous-part>all parts</poisonous-part>
+    </poisonous-flower>
+    <rare-flower id="LLLLLL" name="Gagea">
+        <soil>sod-podzolic</soil>
+        <origin>Africa</origin>
+        <visual-parameters>
+            <stem-colour>Green</stem-colour>
+            <leaf-colour>Yellow</leaf-colour>
+            <average-size>37</average-size>
+        </visual-parameters>
+        <growing-tips>
+            <temperature>25</temperature>
+            <photophilous>true</photophilous>
+            <watering-amount>300</watering-amount>
+        </growing-tips>
+        <multiplying>seed</multiplying>
+        <quantity>730</quantity>
+    </rare-flower>
+</flowers>

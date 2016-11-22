@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/flowers"
+        xmlns:tns="http://www.example.com/flowers"
+        elementFormDefault="qualified">
+    <element name="flowers">
+        <complexType>
+            <sequence>
+                <element ref="tns:flower"
+                         minOccurs="2"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+
+    <element name="flower" type="tns:Flower" abstract="true"/>
+    <element name="poisonous-flower" type="tns:PoisonousFlower" substitutionGroup="tns:flower"/>
+    <element name="rare-flower" type="tns:RareFlower" substitutionGroup="tns:flower"/>
+    
+    <complexType name="Flower">
+        <sequence>
+            <element name="soil">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="podzolic"/>        <!--подзолистая-->
+                        <enumeration value="dirt"/>            <!--грунтовая-->
+                        <enumeration value="sod-podzolic"/>    <!--дерново-подзолистая-->
+                    </restriction>
+                </simpleType>
+            </element>
+            <element name="origin" type="string" />
+            <element name="visual-parameters" type="tns:VisualParameters" />
+            <element name="growing-tips" type="tns:GrowingTips" />
+            <element name="multiplying">
+                <simpleType>
+                    <restriction base="string">
+                        <enumeration value="leaf"/>             <!--листья-->
+                        <enumeration value="stalk"/>            <!--черенки-->
+                        <enumeration value="seed"/>             <!--семена-->
+                    </restriction>
+                </simpleType>
+            </element>
+        </sequence>
+
+        <attribute name="id" type="tns:Id" use="required" />
+        <attribute name="name" type="string" use="optional" default="no name"/>
+    </complexType>
+
+    <complexType name="PoisonousFlower" >
+        <complexContent>
+            <extension base="tns:Flower">
+                <sequence>
+                    <element name="poisonous-part" type="tns:PoisonousElement"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+    <complexType name="RareFlower" >
+        <complexContent>
+            <extension base="tns:Flower">
+                <sequence>
+                    <element name="quantity" type="integer"/>
+                </sequence>
+            </extension>
+        </complexContent>
+    </complexType>
+
+
+    <simpleType name="Id">
+        <restriction base="ID">
+            <pattern value="[a-zA-Z]{6}"/>
+        </restriction>
+    </simpleType>
+
+    <complexType name="VisualParameters">
+        <sequence>
+            <element name="stem-colour" type="string" />
+            <element name="leaf-colour" type="string" />
+            <element name="average-size" type="double" />
+        </sequence>
+    </complexType>
+
+    <complexType name="GrowingTips">
+        <sequence>
+            <element name="temperature" type="integer" />            <!--in degrees-->
+            <element name="photophilous" type="boolean" />
+            <element name="watering-amount" type="tns:WaterAmount" />    <!--ml per week-->
+        </sequence>
+    </complexType>
+
+    <simpleType name="Temperature">
+        <restriction base="integer" >
+            <minInclusive value="15"/>
+            <maxInclusive value="25"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="WaterAmount">
+        <restriction base="integer" >
+            <minInclusive value="100"/>
+            <maxInclusive value="700"/>
+        </restriction>
+    </simpleType>
+
+    <simpleType name="PoisonousElement">
+        <restriction base="string">
+            <enumeration value="all parts"/>
+            <enumeration value="leaf"/>
+            <enumeration value="bulb"/>
+            <enumeration value="seed"/>
+            <enumeration value="juice"/>
+            <enumeration value="root"/>
+        </restriction>
+    </simpleType>
+    
+</schema>

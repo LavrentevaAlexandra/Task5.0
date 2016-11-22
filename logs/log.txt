@@ -1,0 +1,1 @@
+23:07:05.748 [main] ERROR com.lavr.fifth.runner.Runner - com.lavr.fifth.parser.ParserException: Wrong parser type
